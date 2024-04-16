@@ -37,15 +37,6 @@ const SimpleCalculator = () => {
     setInput('');
   };
 
-  // Navigate back to home screen
-  const goToHomeScreen = () => {
-    // Assuming navigation is provided as a prop
-    // Make sure to pass navigation as a prop from parent component
-    // Or use another navigation method such as React Navigation
-    // navigation.goBack();
-    console.log('Go back to home screen');
-  };
-
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Simple Calculator</Text>
