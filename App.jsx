@@ -1,10 +1,11 @@
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity } from 'react-native'; // Import necessary components from react-native
 import Display from './src/components/Display';
 import Keypad from './src/components/Keypad';
 import styles from './src/styles/styles';
 
 const SimpleCalculator = () => {
-  const [input, setInput] = useState('0');
-  const navigation = useNavigation(); // Initialize navigation
+  const [input, setInput] = useState(''); // Define input state
 
   // Handle input
   const handleInput = (inputValue) => {
@@ -38,7 +39,11 @@ const SimpleCalculator = () => {
 
   // Navigate back to home screen
   const goToHomeScreen = () => {
-    navigation.goBack();
+    // Assuming navigation is provided as a prop
+    // Make sure to pass navigation as a prop from parent component
+    // Or use another navigation method such as React Navigation
+    // navigation.goBack();
+    console.log('Go back to home screen');
   };
 
   return (
